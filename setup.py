@@ -7,7 +7,7 @@ setup(
     packages=find_packages(),              # Trouve automatiquement tous les packages
     install_requires=[                    # Les dépendances nécessaires
         'django',
-        'python-decouple',
+        'djangorestframework',
     ],
     entry_points={                        # Point d'entrée pour exécuter le script
         'console_scripts': [

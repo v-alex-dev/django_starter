@@ -51,7 +51,7 @@ def main():
     # 5. Add dependencies to requirements.txt
     print("Creating requirements.txt...")
     with open("requirements.txt", "w") as f:
-        f.write("Django\npython-decouple\n")
+        f.write("Django\ndjangorestframework\n")
 
     # 6. Install dependencies in real-time with `tqdm`
     print("Installing dependencies with pip...")
