@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
+from django_starter.__version__ import __version__
 
 setup(
     name='django_starter',                 # Le nom de ton package
-    version='0.1.0',                       # La version initiale de ton package
+    version=__version__,                       # La version initiale de ton package
     packages=find_packages(),              # Trouve automatiquement tous les packages
     install_requires=[                    # Les dépendances nécessaires
         'django',
