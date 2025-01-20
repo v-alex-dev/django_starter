@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-from django_starter.__version__ import __version__
+from django_starter.version import __version__
 
 setup(
     name='django_starter',                 # Le nom de ton package
