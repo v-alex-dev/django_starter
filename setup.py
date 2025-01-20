@@ -14,11 +14,9 @@ setup(
         ],
     },
     include_package_data=True,             # Inclut les fichiers supplémentaires (README, LICENSE, etc.)
-    long_description=open('README.md').read(),  # Lis le README pour une description longue
-    long_description_content_type='text/markdown',  # Spécifie le type de contenu du README
-    author='Ton Nom',                     # Ton nom
-    author_email='ton_email@example.com',  # Ton email
-    url='https://github.com/toncompte/django_starter',  # Lien vers le dépôt GitHub (si tu en as un)
+    author='Vens',                     # Ton nom
+    author_email='vens.dev.freelance@gmail.com',  # Ton email
+    url='https://github.com/v-alex-dev/django_starter',  # Lien vers le dépôt GitHub (si tu en as un)
     classifiers=[                          # Classificateurs pour décrire ton package
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
