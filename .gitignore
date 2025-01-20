@@ -10,3 +10,5 @@ __pycache__/
 .vscode/
 *.log
 *.sqlite3
+build/
+dist/
