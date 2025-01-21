@@ -58,28 +58,20 @@ def main():
     installing_animation(["pip", "install", "-r", "requirements.txt"])
 
     # 7. Add django_rest_framework to INSTALLED_APPS
-    settings_path = Path(project_name) / project_name / "settings.py"
-    with open(settings_path, "r") as f:
-        settings = f.readlines()
+    # settings_path = Path(project_name) / project_name / "settings.py"
+    # app_name = "rest_framework"
+    # print(f"Adding '{app_name}' to INSTALLED_APPS in {settings_path}...")
+    # with open(settings_path, "r") as f:
+    #     settings = f.read()
 
-    # Find the line where INSTALLED_APPS is defined
-    for i, line in enumerate(settings):
-        if line.strip().startswith("INSTALLED_APPS"):
-            start_index = i
-            break
+    # if "INSTALLED_APPS" in settings:
+    #     settings = settings.replace(
+    #         "INSTALLED_APPS = [",
+    #         f"INSTALLED_APPS = [\n    '{app_name}',"
+    #     )
 
-    # Find the closing bracket of the INSTALLED_APPS list
-    for j in range(start_index, len(settings)):
-        if settings[j].strip() == "]":
-            end_index = j
-            break
-
-    # Insert 'rest_framework' before the closing bracket
-    settings.insert(end_index, "    'rest_framework',\n")
-
-    # Write the changes back to settings.py
-    with open(settings_path, "w") as f:
-        f.writelines(settings)
+    # with open(settings_path, "w") as f:
+    #     f.write(settings)
     
     print("\nDjango project initialized successfully!")
 
